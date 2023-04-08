@@ -21,9 +21,9 @@ class AppRoutes {
 
   static Page _profileScreenBuilder(BuildContext context, GoRouterState state) {
     late User user;
-    if(state.extra != null && state.extra is User){
+    if (state.extra != null && state.extra is User) {
       user = state.extra as User;
-    }else{
+    } else {
       user = User.dummy();
     }
     return MaterialPage(
@@ -35,8 +35,7 @@ class AppRoutes {
 
   static Page _homeScreenBuilder(BuildContext context, GoRouterState state) {
     return const MaterialPage(
-      child: HomeScreen(
-      ),
+      child: HomeScreen(),
     );
   }
 

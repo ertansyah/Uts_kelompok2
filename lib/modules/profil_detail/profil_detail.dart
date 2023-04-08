@@ -4,9 +4,9 @@ import 'package:pertemuan_v/models/user.dart';
 
 class ProfileDetail extends StatefulWidget {
   const ProfileDetail({
-    super.key, 
+    super.key,
     required this.user,
-    });
+  });
   final User user;
 
   @override
@@ -51,8 +51,8 @@ class _ProfileDetailState extends State<ProfileDetail> {
     return Scaffold(
       body: Column(
         children: [
-         SizedBox(
-            height : MediaQuery.of(context).padding.top,
+          SizedBox(
+            height: MediaQuery.of(context).padding.top,
           ),
           const SizedBox(
             height: 16,
@@ -118,8 +118,7 @@ class _ProfileDetailState extends State<ProfileDetail> {
                       return null;
                     },
                   ),
-                ),
-                
+                ),          
                 const SizedBox(
                   height: 8,
                 ),
@@ -283,7 +282,7 @@ class _ProfileDetailState extends State<ProfileDetail> {
               child: const Center(
                 child: Text(
                   "SIMPAN",
-                ),
+                ),              
               ),
             ),
           )
