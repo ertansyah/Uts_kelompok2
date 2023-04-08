@@ -262,6 +262,7 @@ class _ProfileDetailState extends State<ProfileDetail> {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(content: Column(
                     children: const  [
+                      
                       Text("SUKSES",),
                       Text("Anda telah berhasil merubah data diri anda",),
                     ],
