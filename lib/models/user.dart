@@ -29,9 +29,9 @@ class User {
   factory User.dummy() {
     return User(
       id: 001,
-      name: "Diar Nur Rizky",
-      username: "diarn",
-      email: "diarn@email.com",
+      name: "Sinnta jojo",
+      username: "SosisSonice",
+      email: "Sosis@email.com",
       profilePhoto:
           "https://i.postimg.cc/1z6SJk9G/pexels-andrea-piacquadio-3772510.jpg",
       phoneNumber: "085123456789",
