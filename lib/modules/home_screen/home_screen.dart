@@ -152,7 +152,10 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),
             child: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                GoRouter.of(context).goNamed(AppRoutes.profilDetail,
+                );
+              },
               child: Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
