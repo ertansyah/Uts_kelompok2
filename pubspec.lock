@@ -84,10 +84,10 @@ packages:
     dependency: "direct main"
     description:
       name: go_router
-      sha256: "7f25c4bb371b74b6f32f74946707db4595fa66e68ddc7f0da4a4dafb18a21480"
+      sha256: feab99a20fd248c658c923ba98f4449ca6e575c3dee9fdf07146f4f33482c6bc
       url: "https://pub.dev"
     source: hosted
-    version: "6.5.1"
+    version: "6.5.5"
   js:
     dependency: transitive
     description:
