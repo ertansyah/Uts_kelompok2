@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pertemuan_v/configs/app_routes.dart';
 
 import '../../../../models/news.dart';
-import '../../../../models/news_dummy.dart';
+import '../../../../models/list_news.dart';
 import '../../../../models/user.dart';
 
 class HomeFragmentWidget {
@@ -163,7 +163,7 @@ class HotestNewsCard extends StatelessWidget {
             onTap: (){
               GoRouter.of(context).goNamed(
                 AppRoutes.newsDetail,
-                extra: hotesNewsDummy,// todo: err
+                extra: listhotesNews,
               );
             },
             child: AspectRatio(
@@ -213,16 +213,16 @@ class LatestNewsCard extends StatelessWidget {
   const LatestNewsCard({
     super.key,
     required this.size,
-    required this.newsIndex, // todo: modify to news
+    required this.newsIndex, 
   });
 
   final Size size;
-  final int newsIndex; // todo: define news
+  final int newsIndex; 
 
   @override
   Widget build(BuildContext context) {
-    // todo: define news
-    News news = latesNewsDummy[newsIndex];
+  
+    News news = litslatesNews[newsIndex];
     return Column(
       children: [
         Container(
@@ -240,7 +240,7 @@ class LatestNewsCard extends StatelessWidget {
             onTap: () {
               GoRouter.of(context).goNamed(
                 AppRoutes.newsDetail,
-                extra: news,// todo: add newsIndex
+                extra: news,
               );
             },
             child: Row(
@@ -255,7 +255,7 @@ class LatestNewsCard extends StatelessWidget {
                     child: AspectRatio(
                       aspectRatio: 1 / 1,
                       child: Image.network(
-                        news.imageUrl, // todo: add newsIndex
+                        news.imageUrl, 
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -281,8 +281,6 @@ class LatestNewsCard extends StatelessWidget {
     );
   }
 }
-
-// todo: add latesNews
 class LatestNewsSection extends StatelessWidget {
   const LatestNewsSection({
     super.key,
@@ -290,7 +288,7 @@ class LatestNewsSection extends StatelessWidget {
     required this.latesNews,
   });
 
-  // todo: define latesNews
+  //define latesNews
   final Size size;
   final List<News> latesNews;
 

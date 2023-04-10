@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pertemuan_v/configs/app_routes.dart';
-import 'package:pertemuan_v/models/news_dummy.dart';
+import 'package:pertemuan_v/models/list_news.dart';
 import 'package:pertemuan_v/models/user.dart';
 import 'package:pertemuan_v/modules/home_screen/fragments/home_fragment/home_fragment.dart';
 import 'package:pertemuan_v/modules/home_screen/fragments/menu_fragment/menu_fragment.dart';
@@ -29,8 +29,8 @@ class _HomeScreenState extends State<HomeScreen> {
   late User user;
 
   // todo: define hotesNews && List<News> latesNews
-  late News hotesNews = hotesNewsDummy;
-  late List<News> latesNews = latesNewsDummy;
+  late News hotesNews = listhotesNews;
+  late List<News> latesNews = litslatesNews;
 
   tapBottomItem(int index) {
     if (index != 2) {

@@ -10,16 +10,16 @@ class HomeFragment extends StatefulWidget {
   const HomeFragment({
     super.key,
     required this.user,
-    required this.hotesNews, // todo: add constructor hotesNews
-    required this.latesNews,  // todo: add constructor latesNews
+    required this.hotesNews, //add constructor hotesNews
+    required this.latesNews,  //add constructor latesNews
     required this.homeScaffold,
   });
 
   final User user;
 
-  // todo: define hotesNews && latesNews
-  final News hotesNews; // todo
-  final List<News> latesNews; // todo
+  // define hotesNews && latesNews
+  final News hotesNews; 
+  final List<News> latesNews; 
   final GlobalKey<ScaffoldState> homeScaffold;
 
   @override
@@ -81,7 +81,7 @@ class _HomeFragmentState extends State<HomeFragment> {
                     ),
                     child: HomeFragmentWidget.hotestNewsCard(
                       size,
-                      // todo: add hotesNews && List<News> latesNews
+                      //add hotesNews && List<News> latesNews
                       widget.hotesNews.imageUrl, // "https://picsum.photos/1080/690",
                       widget.hotesNews.title, // "Lebaran Sebentar Lagi",
                     ),

@@ -36,7 +36,7 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children:  [
                       Text(
-                        widget.news.date,
+                        widget.news.id,
                         overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
                           fontSize: 20,
