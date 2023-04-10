@@ -1,4 +1,13 @@
 import './news.dart';
+News hotesNewsDummy = News(
+  id: 'hotes-001',
+  date: '08-04-2023',
+  imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3c/Mount_Cikuray_from_Cisurupan.JPG',
+  title:
+      'Gunung Cikuray',
+  content:
+      'sebuah gunung bertipe Stratovolcano yang terletak di Dayeuhmanggung, Kabupaten Garut, Jawa Barat, Indonesia. Gunung Cikuray yang mempunyai ketinggian 2.821 meter di atas permukaan laut ini tidak mempunyai kawah aktif dan merupakan gunung tertinggi keempat di Jawa Barat setelah Gunung Ciremai, Gunung Pangrango dan Gunung Gede. Gunung ini berada di perbatasan kecamatan Bayongbong dari sini bisa naik melalui jalur Cilegug atau kampung Jambansari dekat markas HdG Team, Cikajang, Kiara Janggot dan Dayeuhmanggung. Iklim di daerah Gunung Cikuray dan sekitarnya dikategorikan sebagai daerah beriklim tropis basah (humid tropical climate). Curah hujan di sekitar Gunung Cikuray mencapai 3500-4000mm dengan kalkulasi bulan basah 9 bulan dan bulan kering 3 bulan dan juga variasi temperatur dari 10 °C hingga 24 °C.',
+);
 
 
 
