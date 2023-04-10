@@ -73,13 +73,13 @@ class NewsFragment extends StatelessWidget {
   }
 }
 
-class News {
+class News2 {
   final String imageUrl;
   final String title;
   final String description;
   final String author;
 
-  const News({
+  const News2({
     required this.imageUrl,
     required this.title,
     required this.description,
@@ -87,22 +87,22 @@ class News {
   });
 }
 
-final List<News> dummyNews = [
-  const News(
+final List<News2> dummyNews = [
+  const News2(
     imageUrl: 'https://picsum.photos/1920/1080',
     title: 'Berita Pertama',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget tortor neque. Aenean consequat ac metus et mattis. Vestibulum semper vulputate massa, vitae lacinia elit tincidunt eu. Suspendisse aliquam mi eu nunc fermentum placerat. Etiam consectetur lectus nisi, ut consectetur ante tristique in. Sed eu mauris velit.',
     author: 'Nama Penulis',
   ),
-  const News(
+  const News2(
     imageUrl: 'https://picsum.photos/1080/720',
     title: 'Berita Kedua',
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget tortor neque. Aenean consequat ac metus et mattis. Vestibulum semper vulputate massa, vitae lacinia elit tincidunt eu. Suspendisse aliquam mi eu nunc fermentum placerat. Etiam consectetur lectus nisi, ut consectetur ante tristique in. Sed eu mauris velit.',
     author: 'Nama Penulis',
   ),
-  const News(
+  const News2(
     imageUrl: 'https://picsum.photos/200/300',
     title: 'Berita Ketiga',
     description:
