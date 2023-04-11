@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:pertemuan_v/configs/app_routes.dart';
 import 'package:pertemuan_v/models/user.dart';
 import 'package:pertemuan_v/modules/home_screen/fragments/home_fragment/home_fragment_widgets.dart';
 
@@ -9,16 +11,12 @@ import '../../../../models/news.dart';
 class HomeFragment extends StatefulWidget {
   const HomeFragment({
     super.key,
-    required this.user,
-    required this.hotesNews, //add constructor hotesNews
+    required this.user, 
     required this.latesNews,  //add constructor latesNews
     required this.homeScaffold,
   });
 
   final User user;
-
-  // define hotesNews && latesNews
-  final News hotesNews; 
   final List<News> latesNews; 
   final GlobalKey<ScaffoldState> homeScaffold;
 
@@ -79,11 +77,17 @@ class _HomeFragmentState extends State<HomeFragment> {
                     padding: const EdgeInsets.symmetric(
                       horizontal: 16,
                     ),
+                    child: InkWell(
+                      onTap: (){
+                        GoRouter.of(context).goNamed(
+                          AppRoutes.newsDetailHot,
+                        );
+                      },
                     child: HomeFragmentWidget.hotestNewsCard(
                       size,
-                      //add hotesNews && List<News> latesNews
-                      widget.hotesNews.imageUrl, // "https://picsum.photos/1080/690",
-                      widget.hotesNews.title, // "Lebaran Sebentar Lagi",
+                      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mount_Cikuray_from_Cisurupan.JPG", 
+                      "Gunung Cikuray", 
+                    ),
                     ),
                   ),
                   const SizedBox(

@@ -28,8 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final PageController _pageController = PageController();
   late User user;
 
-  // todo: define hotesNews && List<News> latesNews
-  late News hotesNews = listhotesNews;
+
   late List<News> latesNews = litslatesNews;
 
   tapBottomItem(int index) {
@@ -70,8 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           HomeFragment(
             user: user,
-            hotesNews: hotesNews, // todo: add hotesNews 
-            latesNews: latesNews,  // todo: add latesNews 
+            latesNews: latesNews,  
             homeScaffold: scaffoldKey, 
           ),
           const NewsFragment(),

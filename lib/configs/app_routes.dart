@@ -13,6 +13,7 @@ class AppRoutes {
   static const String home = "home";
   static const String newsDetail = "news-detail";
   static const String profileDetail = "profile-detail";
+  static const String newsDetailHot = "news-detail-hot";
 
   static Page _splahScreenBuilder(BuildContext context, GoRouterState state) {
     return const MaterialPage(
@@ -35,6 +36,14 @@ class AppRoutes {
       ),
     );
   }
+
+static Page _newsDetailScreenHotBuilder(BuildContext context,GoRouterState state) 
+  {
+  
+    return  const MaterialPage(
+      child: NewsDetailScreenHot(newsDetailHot: newsDetailHot),
+      );
+    }
 
   static Page _profileScreenBuilder(BuildContext context, GoRouterState state) {
     late User user;
@@ -66,6 +75,11 @@ class AppRoutes {
             name: newsDetail,
             path: "news-detail",
             pageBuilder: _newsDetailScreenBuilder,
+          ),
+          GoRoute(
+            name: newsDetailHot,
+            path: "news-detail-hot",
+            pageBuilder: _newsDetailScreenHotBuilder,
           ),
           GoRoute(
             name: profileDetail,

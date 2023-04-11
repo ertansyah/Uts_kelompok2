@@ -22,7 +22,7 @@ class HomeFragmentWidget {
     return SectionTitle(label: label);
   }
 
-  static hotestNewsCard(Size size, String pictureUrl, String newsTitle ) {
+  static hotestNewsCard(Size size, String pictureUrl, String newsTitle,) {
     return HotestNewsCard(
       size: size,
       pictureUrl: pictureUrl,
@@ -159,19 +159,11 @@ class HotestNewsCard extends StatelessWidget {
       children: [
         ClipRRect(
           borderRadius: BorderRadius.circular(16),
-          child: GestureDetector(
-            onTap: (){
-              GoRouter.of(context).goNamed(
-                AppRoutes.newsDetail,
-                extra: listhotesNews,
-              );
-            },
-            child: AspectRatio(
-              aspectRatio: 16 / 9,
-              child: Image.network(
-                pictureUrl,
-                fit: BoxFit.cover,
-              ),
+          child: AspectRatio(
+            aspectRatio: 16 / 9,
+            child: Image.network(
+              pictureUrl,
+              fit: BoxFit.cover,
             ),
           ),
         ),
